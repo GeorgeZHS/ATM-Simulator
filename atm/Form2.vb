@@ -54,6 +54,7 @@ Public Class Form2
 
             File.WriteAllText(filePath, serializedJson)
 
+            MsgBox("Successful deposit!", MsgBoxStyle.OkOnly, "Deposit")
         End If
     End Sub
 
@@ -83,6 +84,8 @@ Public Class Form2
             serializedJson = JsonConvert.SerializeObject(accountsData, Formatting.Indented)
 
             File.WriteAllText(filePath, serializedJson)
+
+            MsgBox("Successful money withdrawal", MsgBoxStyle.OkOnly, "Withdraw")
         Else
             MsgBox("Amout must not be greater than your current ammount", MsgBoxStyle.OkOnly, "Error")
         End If
