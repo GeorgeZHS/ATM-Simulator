@@ -27,6 +27,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.pass = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.CreateAccBtn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -70,11 +71,21 @@ Partial Class Form1
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'CreateAccBtn
+        '
+        Me.CreateAccBtn.Location = New System.Drawing.Point(262, 215)
+        Me.CreateAccBtn.Name = "CreateAccBtn"
+        Me.CreateAccBtn.Size = New System.Drawing.Size(119, 23)
+        Me.CreateAccBtn.TabIndex = 5
+        Me.CreateAccBtn.Text = "Create Account"
+        Me.CreateAccBtn.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(393, 250)
+        Me.Controls.Add(Me.CreateAccBtn)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pass)
         Me.Controls.Add(Me.Label2)
@@ -92,4 +103,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents pass As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents CreateAccBtn As Button
 End Class

@@ -40,4 +40,8 @@ Public Class Form1
         Next
         Return False
     End Function
+
+    Private Sub CreateAccBtn_MouseClick(sender As Object, e As MouseEventArgs) Handles CreateAccBtn.MouseClick
+        Form3.Show()
+    End Sub
 End Class
